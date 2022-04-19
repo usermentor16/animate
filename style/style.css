@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Rubik+Microbe&family=Rubik+Wet+Paint&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.main-content {
+    background-image: url('../img/fon.png');
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-family: 'Passions Conflict', cursive;
+    font-family: 'Rubik Microbe', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    animation-name: text;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes text {
+    25% {
+        padding-left: 100px;
+    }
+
+    50% {
+        padding-top: 100px;
+
+    }
+
+    75% {
+        padding-right: 100px;
+    }
+
+    100% {
+        padding-top: -100px;
+
+    }
+}
+
+.anim {
+    font-size: 40px;
+    color: white;
+    animation-name: let;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes let {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.main-content .height {
+    line-heig
+    ht: 10px;
+}
+
+.touch {
+    background: #FEFEC9;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.touch p {
+    padding: 0 20rem;
+}
+
+.touch button {
+    padding: 7px 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.item {
+    padding: 5rem 6rem;
+    text-align: center;
+}
+
+.item .items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.items img {
+    animation-name: img;
+    padding: 15px;
+    animation-iteration-count: infinite;
+    animation-duration: .4s;
+}
+
+@keyframes img {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.items img:hover {
+    background-color: #F5F5F5;
+
+}
+
+.items p {
+    margin: 0 5rem;
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+    .menu {
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu img {
+        width: 100px;
+    }
+
+    .touch p {
+        padding: 0;
+    }
+
+    .item .items {
+        display: block;
+    }
+
+    .items p {
+        margin: 0;
+    }
+
+    .main-content .height {
+        line-height: 50px;
+    }
+}
+
+
+
+
+div.smileyface {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    display: block;
+    border-radius: 160px;
+    background: #ffe632;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fffe8d), to(#f6d23e));
+    background: -moz-linear-gradient(top, #fffe8d, #f6d23e);
+    box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+    -webkit-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+    -moz-box-shadow: inset 0px -14px 14px rgba(0, 0, 0, .3), 0px 2px 20px rgba(0, 0, 0, .6);
+}
+
+p.eyes {
+    width: 50px;
+    height: 80px;
+    background: #222;
+    position: absolute;
+    top: 40px;
+    border-radius: 160px;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+
+}
+
+p.eyes.lefteye {
+    left: 75px;
+}
+
+p.eyes.righteye {
+    right: 75px;
+    animation-name: eyes;
+    animation-iteration-count: infinite;
+    animation-duration: .4s;
+}
+
+@keyframes eyes {
+    from {
+        border-radius: 160px;
+    }
+
+    to {
+        height: 0px;
+        margin-top: 3.4rem;
+    }
+}
+
+div.smile {
+    width: 200px;
+    height: 70px;
+    border: 10px solid #222;
+    border-top: 0;
+    background: rgba(0, 0, 0, 0);
+    -moz-border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    -webkit-border-radius: 0 0 120px 120px 0 0 90px 90px;
+    border-radius: 0 0 120px 120px / 0 0 90px 90px;
+    position: absolute;
+    bottom: 50px;
+    left: 38px;
+    box-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 2px 0 rgba(255, 255, 255, 0.8);
+}
+
+div.corner {
+    width: 10px;
+    height: 30px;
+    background: #222;
+    border-radius: 100px/160px;
+    -webkit-border-radius: 100px 160px;
+    -moz-border-radius: 100px/160px;
+    position: absolute;
+    top: -12px;
+    -webkit-transform: rotate(65deg);
+    -moz-transform: rotate(65deg);
+    left: -12px;
+}
+
+div.corner.right {
+    left: 202px;
+    -webkit-transform: rotate(-65deg);
+    -moz-transform: rotate(-65deg);
+}
+
+
+
+
+.car{
+
+}
+
+.cari{
+    width: 800px;
+    position: relative;
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transition: 1s;
+    transform: translateY(1px);
+}
+
+@keyframes car {
+    from{
+        transform: translateY(1px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.fon{
+    position: absolute;
+    width: 100%;
+    margin-top: -16rem;
+    animation-name: fon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.i{
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    margin-top: -17.5rem;
+    margin-left: 7rem;
+    gap: 5rem;
+}
+
+.i img{
+    width: 240px;
+    animation-name: i;
+    animation-iteration-count: infinite;
+    animation-duration: .1s;
+}
+
+@keyframes i {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
